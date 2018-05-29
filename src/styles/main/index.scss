@@ -1,0 +1,31 @@
+// Main SCSS
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: $color-background url('/dist/assets/images/background.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+#paradigma-capital,
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    max-width: $size-max-width;
+    position: relative;
+}
+
+#main {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+@import 'nav'
