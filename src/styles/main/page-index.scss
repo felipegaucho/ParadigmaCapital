@@ -1,0 +1,12 @@
+// Page index
+
+.page-index {
+  @extend .font-family-titles;
+  @extend .truncate-text;
+
+  bottom: 100px;
+  font-weight: $font-bold-titles;
+  position: absolute;
+  text-align: center;
+  right: 20px;
+}

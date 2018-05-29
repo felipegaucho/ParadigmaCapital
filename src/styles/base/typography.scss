@@ -1,11 +1,54 @@
 // Typography
+
+// Vars
+
 $font-family: 'Source Code Pro', monospace;
 $font-family-titles: 'Source Serif Pro', serif;
 
-$font-bold: 700;
 $font-regular: 300;
-$font-bold-titles: 600;
+$font-bold: 700;
 $font-regular-titles: 400;
+$font-bold-titles: 600;
+
+// Classes
+
+.font-family {
+  font-family: $font-family;
+  font-weight: $font-regular;
+}
+
+.font-family-titles {
+  font-family: $font-family-titles;
+  font-weight: $font-bold-titles;
+}
+
+// Titles
+
+.title-main {
+  @extend .font-family-titles;
+
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.title-tiny {
+  @extend .font-family-titles;
+
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+// Text
+
+.text-big {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.text-main {
+  font-size: 1rem;
+  line-height: 1;
+}
 
 //
 
@@ -14,24 +57,18 @@ html {
 }
 
 body {
+  @extend .font-family;
+
   color: $color-white;
-  font-family: $font-family;
   font-size: 1rem;
-  line-height: 36px;
-  font-weight: $font-regular;
+  line-height: 1.8;
   text-rendering: geometricPrecision;
 }
 
-h1, h2, h3, h4, h5, h6,
-.main-nav-link {
-  font-family: $font-family-titles;
-  font-weight: $font-regular-titles;
+h1, h2, h3, h4, h5, h6 {
+  @extend .font-family-titles;
 }
 
-// Titles
-
-.title-big {
-  font-size: 2.7rem; // 50px
-  font-weight: $font-bold;
-  line-height: 1.2;
+input, button {
+  @extend .font-family;
 }

@@ -1,4 +1,7 @@
-// VARS
+// Vars
+
+// Animation
+$ease-smooth: cubic-bezier(0.4, 0.2, 0, 1);
 
 // Colors
 $color-white: #fff;
@@ -7,3 +10,7 @@ $color-background: #0b1129;
 
 // Sizes
 $size-max-width: 1300px;
+
+// Z-index
+$zindex-main-wrapper: 2;
+$zindex-main-scene: 1;

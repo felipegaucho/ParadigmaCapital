@@ -1,0 +1,44 @@
+// Scene
+
+$size-scene-mountain-height: 281px;
+
+.scene {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: $zindex-main-scene;
+
+  &-item {
+    left: 50%;
+    position: absolute;
+  }
+
+  &-mountain {
+    background: url('/dist/assets/images/scene/mountain.png') repeat-x 50% 100%;
+    bottom: 0;
+    height: $size-scene-mountain-height;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &-person {
+    background: url('/dist/assets/images/scene/person.png') no-repeat 0 0;
+    bottom: $size-scene-mountain-height - 32px;
+    height: 44px;
+    transform: translate3d(180px, 0, 0);
+    width: 15px;
+    z-index: 3;
+  }
+
+  &-spaceship {
+    background: url('/dist/assets/images/scene/spaceship.png') no-repeat 0 0;
+    bottom: $size-scene-mountain-height;
+    height: 103px;
+    transform: translate3d(140px, 0, 0);
+    width: 102px;
+    z-index: 2;
+  }
+}

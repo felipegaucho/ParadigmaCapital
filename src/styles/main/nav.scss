@@ -1,15 +1,30 @@
 // Main nav
 
 .main-nav {
-    position: absolute;
-    right: 2%;
-    top: 5%;
+  position: absolute;
+  right: 2%;
+  top: 5%;
 
-    &-link {
-        color: $color-white;
+  &-link {
+    @extend .font-family-titles;
 
-        &.active {
-            color: $color-green;
-        }
+    color: $color-white;
+    position: relative;
+    text-transform: lowercase;
+
+    &::before {
+      background-color: $color-green;
+      content: '';
+      left: -2%;
+      height: 2px;
+      position: absolute;
+      transition: width .5s $ease-smooth;
+      top: 50%;
+      width: 0%;
+
     }
+    &.active::before {
+      width: 104%;
+    }
+  }
 }

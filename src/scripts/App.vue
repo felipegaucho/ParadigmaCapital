@@ -2,7 +2,7 @@
   <div id="paradigma-capital">
     <div class="main-wrapper">
       <nav class="main-nav">
-        <router-link class="main-nav-link" active-class="active" to="/" exact>Home</router-link>
+        <router-link class="main-nav-link" active-class="active" to="/" exact>Homepage</router-link>
         <router-link class="main-nav-link" active-class="active" to="/about">About</router-link>
         <router-link class="main-nav-link" active-class="active" to="/read">Read</router-link>
         <router-link class="main-nav-link" active-class="active" to="/contact">Contact</router-link>
@@ -11,6 +11,11 @@
         <router-view></router-view>
       </main>
       <div class="page-index">{{ pageIndex }}</div>
+    </div>
+    <div class="scene">
+      <div class="scene-item scene-mountain"></div>
+      <div class="scene-item scene-person"></div>
+      <div class="scene-item scene-spaceship"></div>
     </div>
   </div>
 </template>

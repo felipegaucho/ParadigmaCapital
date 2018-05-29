@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background: $color-background url('/dist/assets/images/background.png') 0 0 no-repeat;
+    background: $color-background url('/dist/assets/images/scene/background.png') 0 0 no-repeat;
     background-size: cover;
 }
 
@@ -14,6 +14,7 @@ body {
 .main-wrapper {
     height: 100%;
     width: 100%;
+    z-index: $zindex-main-wrapper;
 }
 
 .main-wrapper {
@@ -28,4 +29,17 @@ body {
     position: absolute;
 }
 
-@import 'nav'
+.main-section {
+    padding: 0 0 80px 20px;
+    max-width: 420px;
+
+    &-title {
+        @extend .title-main;
+
+        margin-bottom: 20px;
+    }
+}
+
+@import 'nav';
+@import 'scene';
+@import 'page-index';

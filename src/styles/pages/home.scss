@@ -1,0 +1,56 @@
+// Home page
+
+.homepage {
+  &-text {
+    @extend .text-big;
+  }
+
+  &-form {
+    align-items: flex-end;
+    display: flex;
+    margin-top: 40px;
+
+    &-label {
+      flex: 1 1 100%;
+      padding-right: 10px;
+
+      &-text {
+        @extend .title-tiny;
+
+        display: block;
+      }
+    }
+
+    &-input {
+      @extend .text-main;
+      @extend .button-input-style;
+
+      border: 1px solid $color-white;
+      color: $color-white;
+      margin: 10px 0 0;
+      padding: 0 15px;
+      width: 100%;
+
+      &:-webkit-autofill {
+        animation-name: autofill;
+        animation-fill-mode: both;
+        font-size: 1rem; // 18px
+        font-weight: $font-regular;
+        line-height: 1.7;
+      }
+      
+      &::placeholder {
+        color: $color-white;
+        opacity: 0.5;
+        font-size: 1rem; // 18px
+        font-weight: $font-regular;
+        line-height: 1.7;
+      }
+    }
+
+    &-button {
+      @extend .main-button;
+      flex: 0 0 auto;
+    }
+  }
+}
