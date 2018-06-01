@@ -7,9 +7,6 @@
 
 <script>
     export default {
-        name: 'PageAbout',
-        created () {
-            console.log(this)
-        }
+        name: 'PageAbout'
     }
 </script>

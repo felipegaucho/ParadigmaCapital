@@ -2,7 +2,7 @@
 
 // Animation
 $ease-smooth: cubic-bezier(0.4, 0.2, 0, 1);
-
+$ease-in-out-sine: cubic-bezier(0.445, 0.050, 0.550, 0.950);
 // Colors
 $color-white: #fff;
 $color-green: #06f287;
@@ -10,6 +10,9 @@ $color-background: #0b1129;
 
 // Sizes
 $size-max-width: 1300px;
+$size-mainsection-max-width: 600px;
+$size-homepage-max-width: 420px;
+$size-aboutpage-max-width: 500px;
 
 // Z-index
 $zindex-main-wrapper: 2;

@@ -31,7 +31,7 @@ body {
 
 .main-section {
     padding: 0 0 80px 20px;
-    max-width: 420px;
+    max-width: $size-mainsection-max-width;
 
     &-title {
         @extend .title-main;

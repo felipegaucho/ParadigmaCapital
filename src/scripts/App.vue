@@ -10,7 +10,12 @@
       <main id="main">
         <router-view></router-view>
       </main>
-      <div class="page-index">{{ pageIndex }}</div>
+<!--       <div class="page-index">
+        <p class="page-index-text" :class="{'active': pageIndex === 'Homepage'}">Homepage</p>
+        <p class="page-index-text" :class="{'active': pageIndex === 'About'}">About</p>
+        <p class="page-index-text" :class="{'active': pageIndex === 'Read'}">Read</p>
+        <p class="page-index-text" :class="{'active': pageIndex === 'Contact'}">Contact</p>
+      </div> -->
     </div>
     <div class="scene">
       <div class="scene-item scene-mountain"></div>
@@ -32,9 +37,6 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  },
-  updated (event) {
-    console.log(this, event)
   }
 }
 </script>

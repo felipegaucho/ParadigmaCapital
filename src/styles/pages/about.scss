@@ -1,7 +1,5 @@
 // About page
 
 .aboutpage {
-  &-text {
-    margin: 20px 0;
-  }
+  max-width: $size-aboutpage-max-width;
 }

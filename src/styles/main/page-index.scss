@@ -4,9 +4,30 @@
   @extend .font-family-titles;
   @extend .truncate-text;
 
+  align-items: center;
   bottom: 100px;
-  font-weight: $font-bold-titles;
+  display: flex;
   position: absolute;
-  text-align: center;
   right: 20px;
+  transform: rotateZ(-90deg);
+  transform-origin: top left;
+  transform-style: preserve-3D;
+
+
+  &-text {
+    font-weight: $font-bold-titles;
+    
+    &.active {
+      display: inline-block;
+    }
+  }
+
+  &:after {
+    background: $color-green;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    margin-left: 10px;
+    width: 200px;
+  }
 }

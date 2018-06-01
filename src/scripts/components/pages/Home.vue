@@ -9,8 +9,6 @@
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
           target="_blank"
-          novalidate
-          v-on:submit.prevent="submitForm"
         >
           <label class="homepage-form-label" for="mce-EMAIL">
             <span class="homepage-form-label-text">Want updates?</span>

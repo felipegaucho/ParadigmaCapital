@@ -1,6 +1,8 @@
 // Home page
 
 .homepage {
+  max-width: $size-homepage-max-width;
+
   &-text {
     @extend .text-big;
   }

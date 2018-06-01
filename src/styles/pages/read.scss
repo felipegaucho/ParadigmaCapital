@@ -4,4 +4,35 @@
   &-text {
     margin: 20px 0;
   }
+
+  &-item {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    &-date,
+    &-link {
+      @extend .text-big;
+
+      color: $color-green;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+    }
+    &-date {
+      width: 100%;
+    }
+    &-title {
+      @extend .title-main;
+      @extend .truncate-text;
+      transform: translateX(15px);
+    }
+    &-link {
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
 }

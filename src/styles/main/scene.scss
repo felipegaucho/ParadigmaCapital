@@ -25,6 +25,7 @@ $size-scene-mountain-height: 281px;
   }
 
   &-person {
+    animation: pulse 6s $ease-in-out-sine 0s infinite;
     background: url('/dist/assets/images/scene/person.png') no-repeat 0 0;
     bottom: $size-scene-mountain-height - 32px;
     height: 44px;
@@ -34,10 +35,11 @@ $size-scene-mountain-height: 281px;
   }
 
   &-spaceship {
+    animation: wobble 6s $ease-in-out-sine 0s infinite;
     background: url('/dist/assets/images/scene/spaceship.png') no-repeat 0 0;
     bottom: $size-scene-mountain-height;
     height: 103px;
-    transform: translate3d(140px, 0, 0);
+    margin-left: 140px;
     width: 102px;
     z-index: 2;
   }

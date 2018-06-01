@@ -1,7 +1,16 @@
 // Contact page
 
 .contactpage {
-  &-text {
-    margin: 20px 0;
+  &-link {
+    @extend .title-main;
+
+    color: $color-white;
+    display: block;
+    margin-top: 20px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-green;
+    }
   }
 }
